@@ -1,0 +1,37 @@
+#BMI Calculator [Formula = (weight in pounds x 703) / (height in inches x height in inches)]
+
+name = input("Enter you first name: ")
+weight = int(input("Enter your weight in Pounds: "))
+height = int(input("Enter your height in Inches: "))
+BMI = (weight * 703) / (height * height)
+print(name +", your BMI is:",round(BMI))
+
+if BMI>0:
+    if(BMI<18.5):
+        print("You are Underweight.")
+        print("Your Health Risk level is: Minimal")
+        print("PS: Improve your diet.")
+    elif (BMI<=24.9):
+        print("You are normal weight.")
+        print("Your Health Risk level is: Low")
+        print("PS: Keep taking care of your health, you are doing great!")
+    elif (BMI<29.9):
+        print("You are overweight.")
+        print("Your Health Risk level is: Medium")
+        print("PS: Include healther food to your diet.")
+    elif (BMI<34.9):
+        print("You are obese.")
+        print("Your Health Risk level is: High")
+        print("PS: Go see a Nutritionist.")
+    elif (BMI<39.9):
+        print("You are severely obese.")
+        print("Your Health Risk level is: Very High")
+        print("PS: Please visit a Doctor.")
+    elif (BMI<80):
+        print("You are morbidly obese.")
+        print("Your Health Risk level is: Extremely High")
+        print("PS: Please visit a Doctor. Immediately!")
+    else:
+        print("Enter valid input. Max BMI is: 80.")
+else:
+    print("Enter valid input.")
