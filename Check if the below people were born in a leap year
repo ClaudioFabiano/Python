@@ -1,0 +1,28 @@
+# Check if the below people were born in a leap year
+
+yy=int(input("Enter the year you were born: "))
+try:
+    if yy % 4 == 0:
+        print("You was born in a leap year.")
+    else:
+        print(f"{yy} was not a leap year.\n")
+except ValueError:
+    print("Invalid input. Please enter a valid year as a number.\n")
+
+yy2=int(input("Enter the year your spouse was born: "))
+try:
+    if yy2 % 4 == 0:
+        print("Your spouse was born in a leap year.\n")
+    else:
+        print(f"{yy2} was not a leap year.\n")
+except ValueError:
+    print("Invalid input. Please enter a valid year as a number.\n")
+
+yy3=int(input("Enter the year your kid was born: "))
+try:
+    if yy3 % 4 == 0:
+        print("Your kid was born in a leap year.")
+    else:
+        print(f"{yy3} was not a leap year.\n")
+except ValueError:
+    print("Invalid input. Please enter a valid year as a number.\n")
