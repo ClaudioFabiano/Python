@@ -1,0 +1,27 @@
+# Create a new Rectangle class for creating a rectangle object
+import matplotlib.pyplot as plt
+
+# Define the Rectangle class
+class Rectangle:
+    # Constructor
+    def __init__(self, height, width, color):
+        self.height = height
+        self.width = width
+        self.color = color
+    
+    # Method to draw the rectangle
+    def drawRectangle(self):
+        plt.gca().add_patch(plt.Rectangle((0, 0), self.width, self.height, fc=self.color))
+        plt.axis('scaled')
+        plt.show()
+
+# Prompt the user to enter the dimensions and color
+height = int(input("Enter the height: "))
+width = int(input("Enter the width: "))
+color = input("Enter the color: ")
+
+# Create a new Rectangle object
+rectangle = Rectangle(height, width, color)
+
+# Use the drawRectangle method to draw the rectangle
+rectangle.drawRectangle()
