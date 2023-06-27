@@ -1,0 +1,10 @@
+import datetime
+
+# Get today's date
+today = datetime.date.today()
+
+# Extract the year from the date
+year = today.year
+
+# Print the year
+print(year)
