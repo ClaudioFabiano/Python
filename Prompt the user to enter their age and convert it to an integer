@@ -1,0 +1,19 @@
+# Prompt the user to enter their age and convert it to an integer
+age = int(input("Enter your age: "))
+
+# Check age conditions using if-elif-else statements
+if age < 18:
+    print("I am sorry, but you cannot enter.")
+elif age < 20:
+    print("You can enter door 1.")
+elif age < 30:
+    print("You can enter door 1 and 2.")
+elif age < 40:
+    print("You can enter door 1 - 3.")
+elif age < 50:
+    print("You can enter door 1 - 4.")
+else:
+    print("You can enter any door.")
+
+# Print a general message
+print("Please, move on!")
